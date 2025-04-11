@@ -9,9 +9,9 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 logger = logging.getLogger(__name__)
 
 # Define file paths using pathlib
-WEATHER_FILE = Path(r"/home/gokul/work/LLM/Ingestion/Data_json/weather_cleaned.json")
-WINE_FILE = Path(r"/home/gokul/work/LLM/Ingestion/Data_json/Wine_train.json")
-MERGED_FILE = Path(r"/home/gokul/work/LLM/Ingestion/Data_json/merged_data.json")
+WEATHER_FILE = Path(r"./Data_json/weather_cleaned.json")
+WINE_FILE = Path(r"./Data_json/Wine_train.json")
+MERGED_FILE = Path(r"./Data_json/merged_data.json")
 
 
 async def load_json_async(file_path: Path):
