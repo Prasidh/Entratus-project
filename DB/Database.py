@@ -16,7 +16,7 @@ DB_URL = os.getenv("POSTGRES_DB_URL")
 
 # Define the path to the merged data file
 logger.info("Setting path for merged data...")
-MERGED_DATA_PATH = Path(r"E:\NexgenAI\work\src\Ingestion\Data_json\merged_data.json")
+MERGED_DATA_PATH = Path(r"./Data_json/merged_data.json")
 
 
 def store_json_to_postgres(json_file=MERGED_DATA_PATH):
